@@ -1,8 +1,7 @@
-var myobj = {
-    name: 'Jade',
-    hello: function() {
-        console.log(this.name);
-    }
-};
+var person = function(name, age) {
+    this.name = name;
+    this.age = age;
+}
+var jade = new person('Jade', 23);
 
-myobj.hello();
+console.log(jade);
