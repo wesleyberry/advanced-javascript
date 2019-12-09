@@ -1,4 +1,7 @@
-sayHello = name => {
-    return 'Hello ' + name;
-}
-console.log(sayHello('Jade'));
+(function() {
+    var name = 'Jade';
+})();
+
+(function() {
+    var name = 'Bob';
+})();
