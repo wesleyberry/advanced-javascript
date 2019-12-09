@@ -22,4 +22,3 @@ Animal.prototype.play = function (length) {
 
 const leo = Animal('Leo', 7);
 const snoop = Animal('Snoop', 5);
-leo.play(5);
