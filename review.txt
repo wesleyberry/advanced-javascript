@@ -1,0 +1,16 @@
+Global Execution Context:
+    processes are creation and exection.
+    1. creation
+        creates global object
+        creates this (window)
+        assigns undefined to variables (hoisting)/secures memory for values
+        declare functions in memory
+    2. Execution
+        global object
+        assign values to variables
+        run functions
+Hoisting:
+    during the creation phase of the execution context, undefined as assigned to variables as a default values
+
+Closure:
+    if a function is nested within another function, the inner function will create a closure over the outer function's execution context.

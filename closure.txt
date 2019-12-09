@@ -1,0 +1,2 @@
+closures occur when we have a function nested within another function.
+    -inner function creates a closure over the outer function's execution context.

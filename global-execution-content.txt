@@ -1,0 +1,12 @@
+Phase - Creation
+    1. Create Global object
+    2. create window (this)
+    3. create variable and assign undefined
+    4. Declare function in memory
+
+Phase - Execution
+    1. Window global object
+    2. assign values to variables
+    3. run functions
+
+function execution context only fires when a function is invoked

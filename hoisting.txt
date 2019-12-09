@@ -1,0 +1,1 @@
+hoisting - process of assigning a variable declaration a default value of undefined during the creation phase
