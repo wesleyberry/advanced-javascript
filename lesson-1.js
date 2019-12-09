@@ -1,7 +1,8 @@
-(function() {
-    var name = 'Jade';
-})();
+var myobj = {
+    name: 'Jade',
+    hello: function() {
+        console.log(this.name);
+    }
+};
 
-(function() {
-    var name = 'Bob';
-})();
+myobj.hello();
