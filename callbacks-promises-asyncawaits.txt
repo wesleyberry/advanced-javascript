@@ -1,0 +1,9 @@
+Cons of callbacks
+    -diminishes readability
+    -makes error handling difficult
+
+Promises-object that represents the eventual completion or failure of an asynchronous operation
+    -makes code more readable than callbacks
+    -flow control - makes it easy to combine sequential and parallel tasks to create advanced flows
+
+Async/await - syntax on top of generators and promises

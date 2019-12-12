@@ -1,4 +1,4 @@
-// A prototype is a property of a function that points to an object
+// A prototype is a property of an object that points to another object
 function Animal (name, energy) {
     let animal = Object.create(Animal.prototype);
     animal.name = name;
