@@ -46,3 +46,8 @@
 // "aaaa", "aa" => "aa"
 // ----------------------------------------------------------
 
+// Explain event delegation
+// JS event listeners fire not only on a single DOM element, but every child
+
+// Describe event bubbling
+// Inverse of event delegation - events on an alement will 'bubble up' and also fire on all its parents
