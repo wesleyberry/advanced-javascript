@@ -26,3 +26,51 @@ func();
 
 // Use of arrow function
 // Arrow functions to do not have their own this
+
+// What is prototypal inheritance
+// Every object has an property called prototype, and the new object will inherit the properties of the parent
+
+// Difference between function declaration and function expression
+// Function declaration is not assigned to a variable; can be called before it is created
+// Function expression is when a function is assigned to a variable; can not be called before it is created; has variable scope
+
+// What is a promise and why do we use it?
+// Promises indicate an eventual completion or failure of an asynchronous process
+// More readable than callbacks
+// Easier to handle errors
+var promise1 = new Promise(function(resolve, reject) {
+    resolve($.ajax('a.json'));
+});
+
+promise1.then(function(r) {
+    return new Promise();
+}).then(function(result) {
+    $('#div1').html(result);
+});
+
+// 
+setTimeout(function() {
+    console.log('a');
+}, 0);
+console.log('b');
+console.log('c');
+
+// What is closure and how do we use it?
+// Closure occurs when a function is nested within another function. The inner function will add closure to the outer function's execution context.
+// 
+let obj = function() {
+    let i = 0; 
+
+    return {
+        setI(k) {
+            i = k;
+        },
+        getI() {
+            return i;
+        }
+    }
+};
+
+let x = obj();
+x.setI(2);
+console.log(x.getI());
