@@ -1,4 +1,4 @@
-let startAt = performance.now();
+// let startAt = performance.now();
 
 const age = 20 + "";
 console.log(typeof age);
@@ -26,5 +26,17 @@ const individualsArray = Object.values(individuals);
 console.log(individualsArray);
 // ---------------------------------
 
-let endAt = performance.now();
-console.log(`took ${endAt - startAt} milliseconds to execute`);
+// let endAt = performance.now();
+// console.log(`took ${endAt - startAt} milliseconds to execute`);
+
+var newArr = ['Bob', 'Jane', 'Joe'];
+var newestArr = {...newArr};
+console.log(newestArr);
+
+var newObj = {
+    key: 'value1',
+    property1: 'value2',
+    property2: 'value3'
+};
+var newestestArr = Object.values(newObj);
+console.log(newestestArr);
