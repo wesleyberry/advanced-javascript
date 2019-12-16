@@ -1,0 +1,10 @@
+object-oriented programming is a programming paradigm that is focused around objects instead of functions
+Objects - a collection of key-value pairs
+
+Encapsulation - Group related variables into objects
+
+Abstractions - hidden complexities
+
+Inheritance - eliminate redundant code
+
+Polymorphism - technique that allows us to get rid of long statements
