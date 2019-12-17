@@ -8,3 +8,9 @@ Abstractions - hidden complexities
 Inheritance - eliminate redundant code
 
 Polymorphism - technique that allows us to get rid of long statements
+
+Primitives are copied by their value, and objects are copied by their reference
+
+Private Properties and Methods - Hide certain members from the outside
+
+Getter - a function that is used to read a property
