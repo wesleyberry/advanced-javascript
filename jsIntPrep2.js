@@ -51,3 +51,16 @@
 
 // Describe event bubbling
 // Inverse of event delegation - events on an alement will 'bubble up' and also fire on all its parents
+
+function Member(name, email, password) {
+    this.name = name;
+    this.email = email;
+    this.password = password;
+
+    this.register = function() {
+        console.log(`${this.name} has registered.`);
+    }
+}
+
+let jim = new Member('Jim', 'jim@email.com', 'abc123');
+jim.register();
