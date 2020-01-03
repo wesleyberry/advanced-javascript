@@ -96,45 +96,69 @@
 // Exercise
 // properties = duration, reset(func), start(func), stop(func)
 
-function Stopwatch() {
-    let startTime, endTime, duration = 0;
-    let running = false
+// function Stopwatch() {
+//     let startTime, endTime, duration = 0;
+//     let running = false
 
-    this.start = function() {
-        if(!running) {
-            running = true;
-            startTime = new Date().getTime() / 1000;
-            console.log('The clock has started');
-        } else {
-            throw new Error('The clock is already running');
-        }
-    };
+//     this.start = function() {
+//         if(!running) {
+//             running = true;
+//             startTime = new Date().getTime() / 1000;
+//             console.log('The clock has started');
+//         } else {
+//             throw new Error('The clock is already running');
+//         }
+//     };
 
-    this.stop = function() {
-        if(running) {
-            running = false;
-            endTime = new Date().getTime() / 1000;
-            const seconds = endTime - startTime;
-            duration += seconds;
-            console.log('The clock has stopped');
-        } else {
-            throw new Error('The clock is already running...');
-        }
-    };
+//     this.stop = function() {
+//         if(running) {
+//             running = false;
+//             endTime = new Date().getTime() / 1000;
+//             const seconds = endTime - startTime;
+//             duration += seconds;
+//             console.log('The clock has stopped');
+//         } else {
+//             throw new Error('The clock is already running...');
+//         }
+//     };
 
-    this.reset = function() {
-        startTime = null;
-        endTime = null;
-        running = false;
-        duration = 0;
-    };
+//     this.reset = function() {
+//         startTime = null;
+//         endTime = null;
+//         running = false;
+//         duration = 0;
+//     };
 
-    Object.defineProperty(this, 'duration', {
+//     Object.defineProperty(this, 'duration', {
 
-    });
+//     });
+// }
+
+
+// const sw = new Stopwatch();
+// sw.start();
+// sw.stop();
+
+// ---------------------------------------------------------
+
+let b = {
+    x: 100,
+    y: 50,
+    display: function() {
+        console.log(this.x);
+    }
+};
+
+// vs
+
+function Bubble(x, y) {
+    this.x = x;
+    this.y = y;
+
+    this.display = function() {
+        console.log(this.x);
+    }
 }
 
-
-const sw = new Stopwatch();
-sw.start();
-sw.stop();
+let bubble1 = new Bubble(100, 50);
+bubble1.display();
