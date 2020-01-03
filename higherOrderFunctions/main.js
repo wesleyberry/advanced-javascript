@@ -31,12 +31,17 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // let eightiesCompanies = companies.filter(company => company.start >= 1980 && company.start < 1990);
 // console.log(eightiesCompanies);
 
-let lastTenYearsCompanies = companies.filter(company => (company.end - company.start > 10));
-console.log(lastTenYearsCompanies);
+// let lastedTenYearsCompanies = companies.filter(company => (company.end - company.start >= 10));
+// console.log(lastedTenYearsCompanies);
 
 // map
+// const test = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+// console.log(test);
 
-
+const agesSquare = ages.map(age => Math.sqrt(age));
+const agesTimesTwo = ages.map(age => age * 2);
+console.log(agesSquare);
+console.log(agesTimesTwo);
 
 // sort
 
