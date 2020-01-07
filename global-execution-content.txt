@@ -10,3 +10,6 @@ Phase - Execution
     3. run functions
 
 function execution context only fires when a function is invoked
+
+let and const are not hoisted.
+var is hoisted
