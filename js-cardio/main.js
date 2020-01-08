@@ -14,12 +14,26 @@
 // console.log(isPalindrome('racecar'));
 // -------------------------------------------------
 
-function reverseInt(int) {
-    return parseInt(
-        int.toString()
-        .split('')
-        .reverse()
-        .join('')
-        );
+// function reverseInt(int) {
+//     return parseInt(
+//         int.toString()
+//         .split('')
+//         .reverse()
+//         .join('')
+//         ) * Math.sign(int);
+// }
+// console.log(reverseInt(-10009));
+// -------------------------------------------------
+
+function capitalizeLetters(str) {
+    // return str
+    //     .toLowerCase()
+    //     .split(' ')
+    //     .map(word => word[0].toUpperCase() + word.substring(1))
+    //     .join(' ');
+return str.replace(/\b[a-z]/gi, function(char) {
+    return char.toUpperCase();
+});
 }
-console.log(reverseInt(10009));
+console.log(capitalizeLetters('i love javascript'));
+// ---------------------------------------------------
