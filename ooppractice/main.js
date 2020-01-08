@@ -25,11 +25,16 @@
 // console.log(moveCharsForward('abcd'));
 
 // Write a JS program to get the current date
-const formatDate = (date = new Date()) => {
-    const days = date.getDay() + 1;
-    const months = date.getMonth() + 1;
-    const years = date.getFullYear();
-    return `${days}/${months}/${years}`;
-}
+// const formatDate = (date = new Date()) => {
+//     const days = date.getDay() + 1;
+//     const months = date.getMonth() + 1;
+//     const years = date.getFullYear();
+//     return `${days}/${months}/${years}`;
+// }
 
-console.log(formatDate());
+// console.log(formatDate());
+
+// Add 'New!' in front of given string. if it begins with 'new', already return the string
+// const addNew = str => str.indexOf('New!') === 0 ? str : `New! ${str}`;
+
+// console.log(addNew('New! Offers'));
