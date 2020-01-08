@@ -17,9 +17,19 @@
 // console.log(getFileExtension('webpack.config.json'));
 
 // Replace every character in a given string with the character following it in the alphabet.
-const moveCharsForward = str => 
-    str.split('')
-        .map(char => String.fromCharCode(char.charCodeAt(0) + 1))
-        .join('');
+// const moveCharsForward = str => 
+//     str.split('')
+//         .map(char => String.fromCharCode(char.charCodeAt(0) + 1))
+//         .join('');
 
-console.log(moveCharsForward('abcd'));
+// console.log(moveCharsForward('abcd'));
+
+// Write a JS program to get the current date
+const formatDate = (date = new Date()) => {
+    const days = date.getDay() + 1;
+    const months = date.getMonth() + 1;
+    const years = date.getFullYear();
+    return `${days}/${months}/${years}`;
+}
+
+console.log(formatDate());
