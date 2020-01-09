@@ -62,20 +62,48 @@
 // console.log(maxCharacter('javascript'));
 // ------------------------------------------------------
 
-function fizzBuzz() {
-    let arr = [];
-    for(let i = 1; i <= 100; i++) {
-        if(i % 3 === 0 && i % 5 === 0) {
-            arr.push('Fizz Buzz');
-        } else if(i % 3 === 0) {
-            arr.push('Fizz');
-        } else if(i % 5 === 0) {
-            arr.push('Buzz');
-        } else {
-            arr.push(i);
-        }
-    }
-    return arr;
-}
+// function fizzBuzz() {
+//     let arr = [];
+//     for(let i = 1; i <= 100; i++) {
+//         if(i % 3 === 0 && i % 5 === 0) {
+//             arr.push('Fizz Buzz');
+//         } else if(i % 3 === 0) {
+//             arr.push('Fizz');
+//         } else if(i % 5 === 0) {
+//             arr.push('Buzz');
+//         } else {
+//             arr.push(i);
+//         }
+//     }
+//     return arr;
+// }
 
-console.log(fizzBuzz());
+// console.log(fizzBuzz());
+// -----------------------------------------------------------------------------
+
+// Reverse a string
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+// }
+// console.log(reverseString('hello world'));
+// ----------------------------------------------------
+
+// function isPalidrome(str) {
+//     if(str === str.split('').reverse().join('')) {
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(isPalidrome('racecat'));
+// -----------------------------------------------------
+
+// function reverseInt(int) {
+//     return parseInt(
+//         int.toString()
+//         .split('')
+//         .reverse()
+//         .join('')
+//         );
+// }
+// console.log(reverseInt(19005));
+// -------------------------------------------------------
