@@ -108,10 +108,28 @@
 // console.log(reverseInt(19005));
 // -------------------------------------------------------
 
-function capitalizeLetters(str) {
-    return str.toLowerCase()
-    .split(' ')
-    .map(word => word[0].toUpperCase() + word.substring(1))
-    .join(' ');
+// function capitalizeLetters(str) {
+//     return str.toLowerCase()
+//     .split(' ')
+//     .map(word => word[0].toUpperCase() + word.substring(1))
+//     .join(' ');
+// }
+// console.log(capitalizeLetters('i love javascript'));
+// --------------------------------------------------------
+
+function fizzBuzz() {
+    let arr = [];
+    for(let i = 1; i <= 100; i++) {
+        if(i % 15 === 0) {
+            arr.push('Fizz Buzz');
+        } else if(i % 3 === 0) {
+            arr.push('Fizz');
+        } else if(i % 5 === 0) {
+            arr.push('Buzz');
+        } else {
+            arr.push(i);
+        }
+    }
+    return arr;
 }
-console.log(capitalizeLetters('i love javascript'));
+console.log(fizzBuzz());
