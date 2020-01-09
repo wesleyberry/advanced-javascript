@@ -6,7 +6,7 @@ console.log(typeof age);
 const users = Array(5).fill("");
 console.log(users);
 // ---------------------------------
-const people = ["Ed", "Traversy Daddy", "th unemployed tech lead", "John Dough", "Anna", "John Dough"];
+const people = ["Ed", "Traversy Daddy", "the unemployed tech lead", "John Dough", "Anna", "John Dough"];
 const unique = Array.from(new Set(people));
 console.log(unique);
 // ---------------------------------
