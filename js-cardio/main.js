@@ -107,3 +107,11 @@
 // }
 // console.log(reverseInt(19005));
 // -------------------------------------------------------
+
+function capitalizeLetters(str) {
+    return str.toLowerCase()
+    .split(' ')
+    .map(word => word[0].toUpperCase() + word.substring(1))
+    .join(' ');
+}
+console.log(capitalizeLetters('i love javascript'));
