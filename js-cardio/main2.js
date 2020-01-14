@@ -39,9 +39,27 @@
 
 // console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 3));
 // --------------------------------------------------------------------------------
-function flattenArray(arrays) {
+// function flattenArray(arrays) {
+    // SOLUTION 1
     // return arrays.reduce((a, b) => a.concat(b));
 
-    return [].concat.apply([], arrays);
+    // SOLUTION 2
+    // return [].concat.apply([], arrays);
+
+    // SOLUTION 3
+//     return [].concat(...arrays);
+// }
+// console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
+// ---------------------------------------------------------------------------------
+function isAnagram(str1, str2) {
+    return formatStr(str1) === formatStr(str2);
 }
-console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
+function formatStr(str) {
+    return str
+        .replace(/[^\w]/g, '')
+        .toLowerCase()
+        .split('')
+        .sort()
+        .join('');
+}
+console.log(isAnagram('Dormitory', 'dirty room##'));
