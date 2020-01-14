@@ -51,15 +51,30 @@
 // }
 // console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
 // ---------------------------------------------------------------------------------
-function isAnagram(str1, str2) {
-    return formatStr(str1) === formatStr(str2);
+// function isAnagram(str1, str2) {
+//     return formatStr(str1) === formatStr(str2);
+// }
+// function formatStr(str) {
+//     return str
+//         .replace(/[^\w]/g, '')
+//         .toLowerCase()
+//         .split('')
+//         .sort()
+//         .join('');
+// }
+// console.log(isAnagram('Dormitory', 'dirty room##'));
+// ----------------------------------------------------------------------------------
+function letterChanges(str) {
+    let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
+        if(char === 'z' || char === 'Z') {
+            return 'a';
+        } else {
+            return String.fromCharCode(char.charCodeAt() + 1);
+        }
+    });
+
+    newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
+    
+    return newStr;
 }
-function formatStr(str) {
-    return str
-        .replace(/[^\w]/g, '')
-        .toLowerCase()
-        .split('')
-        .sort()
-        .join('');
-}
-console.log(isAnagram('Dormitory', 'dirty room##'));
+console.log(letterChanges('Hello Therez'));
