@@ -13,3 +13,11 @@ console.log(sortWords(wordArr));
 
 let addNums = arr => arr.reduce((a, b) => a + b);
 console.log(addNums(numArr));
+
+numArr.forEach(num => console.log(num));
+
+let atleastTen = numArr.filter(num => num >= 10);
+console.log(atleastTen);
+
+let mutiplyByTwo = numArr.map(num => num * 2);
+console.log(mutiplyByTwo);
