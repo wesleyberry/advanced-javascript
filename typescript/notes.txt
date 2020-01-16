@@ -1,0 +1,7 @@
+Typescript is useful for writing JS apps
+
+Checks the type statically as opposed to dynamically
+
+You get a compiler with TypeScript
+
+TypeScript is used for large applications
