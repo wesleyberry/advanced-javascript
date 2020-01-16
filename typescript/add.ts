@@ -3,4 +3,4 @@ function add(a: number, b: number) {
 }
 
 add(5, 6);
-add(5, 6);
+add("5", 6);
