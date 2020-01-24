@@ -8,14 +8,18 @@ particle.z = 50;
 console.log(particle);
 
 // function definition
-function go() {
+// function go() {
 
-}
+// }
 // or
-let go = function() {
+// let go = function() {
 
-}
+// }
 
 const go = function() {
-    
+    console.log(1);
 }
+const go = function() {
+    console.log(2);
+}
+go();

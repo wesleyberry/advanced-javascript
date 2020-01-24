@@ -12,7 +12,7 @@ var ninjas = ['Shaun', 'Crystal', 'Yoshi', 'Ryu', 'Yoshi', 'Ryu'];
 var refinedNinjas = new Set(ninjas);
 console.log(refinedNinjas);
 var ninjas = [...refinedNinjas];
-console.log(ninjas);
+console.log('ninjas: ' + ninjas);
 
 var cats = ['Sully', 'Joey', 'Winston', 'Lucille', 'Joey', 'Winston'];
 var refinedCats = new Set(cats);
