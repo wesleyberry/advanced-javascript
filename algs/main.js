@@ -44,3 +44,22 @@ console.log(truncateString('Peter Piper picked a pack of pickled peppers', 14));
 console.log(truncateString('Peter Piper picked a pack of pickled peppers', 2));
 console.log(truncateString('Peter Piper picked a pack of pickled peppers', 3));
 // ----------------------------------------------------
+chunkArrayInGroups = (arr, size) => {
+    let groups = [];
+    while(arr.length > 0) {
+        groups.push(arr.splice(0, size));
+    }
+    return groups;
+}
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+// ----------------------------------------------------
+// slasher = (arr, howMany) => {
+//     let newArr = [];
+//     for(let i = howMany; i < arr.length; i++) {
+//         newArr.push(arr[i]);
+//     }
+//     return newArr;
+// }
+slasher = (arr, howMany) => arr.splice(0, howMany);
+console.log(slasher([1, 2, 3], 2));
+console.log(slasher([1, 2, 3, 4, 5, 6], 1));
