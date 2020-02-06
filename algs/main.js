@@ -104,6 +104,56 @@ getIndexToIns = (arr, num) => {
 console.log(getIndexToIns([30, 25, 40, 60], 50));
 // ----------------------------------------------------
 rot13 = str => {
-
+    return;
 }
 console.log(rot13("SERR PBQR PNZC"));
+// ----------------------------------------------------
+sumAll = arr => {
+    let start = Math.min(arr[0], arr[1]);
+    let end = Math.max(arr[0], arr[1]);
+    var total = 0;
+    for(let i = start; i <= end; i++) {
+        total += i;
+    }
+    return total;
+}
+console.log(sumAll([1, 5]));
+console.log(sumAll([-5, 10]));
+// ----------------------------------------------------
+diffArray = (arr1, arr2) => {
+    let combo = arr1.concat(arr2);
+    return combo.filter(num => {
+        if(arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1) return num; 
+    }).sort((a, b) => a - b);
+}
+console.log(diffArray([1, 2, 3, 5, 6, 7], [1, 2, 3, 4, 5]));
+// ----------------------------------------------------
+convertToRoman = num => {
+    let romanToNum = {
+        M: 1000,
+        CM: 900,
+        D: 500,
+        CD: 400,
+        C: 100,
+        XC: 90,
+        L: 50,
+        XL: 40,
+        X: 10,
+        IX: 9,
+        V: 5,
+        IV: 4,
+        I: 1
+    }
+    let roman = '';
+
+    for(var key in romanToNum) {
+        while(num >= romanToNum[key]) {
+            roman += key;
+            num -= romanToNum[key];
+        }
+    }
+    return roman;
+}
+console.log(convertToRoman(3));
+console.log(convertToRoman(11));
+console.log(convertToRoman(12197));
