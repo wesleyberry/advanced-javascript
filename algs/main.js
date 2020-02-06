@@ -157,3 +157,22 @@ convertToRoman = num => {
 console.log(convertToRoman(3));
 console.log(convertToRoman(11));
 console.log(convertToRoman(12197));
+// ----------------------------------------------------
+whatIsInAName = (collection, source) => {
+    var arr = [];
+    var keys = Object.keys(source);
+
+    return collection.filter(obj => {
+        for(var key of keys) {
+            if(!obj.hasOwnProperty(key) || obj[key] !== source[key]) {
+                return false;
+            }
+            return true;
+        }
+    });
+}
+console.log(whatIsInAName([
+    { first: "Romeo", last: "Montague"}, { first: "Mercutio", last: null}, { first: "Tybalt", last: "Capulet"}
+], 
+    {last: "Capulet" }
+));
