@@ -27,12 +27,20 @@ confirmEnding = (str, target) => str[str.length - 1] === target;
 console.log(confirmEnding('Basian', 'n'));
 console.log(confirmEnding('Basian', 't'));
 // ----------------------------------------------------
-repeatStringNumTimes = (str, num) => {
-    let value = str;
-    for(let i = 1; i < num; i++) {
-        value += str;
-    }
-    return value;
-};
+// repeatStringNumTimes = (str, num) => {
+//     let value = str;
+//     for(let i = 1; i < num; i++) {
+//         value += str;
+//     }
+//     return value;
+// };
+repeatStringNumTimes = (str, num) => num < 0 ? '' : str.repeat(num); 
 console.log(repeatStringNumTimes('*', 3));
 console.log(repeatStringNumTimes('+', 10));
+// ----------------------------------------------------
+truncateString = (str, num) => num < 3 ? '' :str.substring(0, num - 3) + '...';
+console.log(truncateString('A-tisket a-tasket a green and yellow basket', 11));
+console.log(truncateString('Peter Piper picked a pack of pickled peppers', 14));
+console.log(truncateString('Peter Piper picked a pack of pickled peppers', 2));
+console.log(truncateString('Peter Piper picked a pack of pickled peppers', 3));
+// ----------------------------------------------------
