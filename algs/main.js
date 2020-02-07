@@ -176,3 +176,14 @@ console.log(whatIsInAName([
 ], 
     {last: "Capulet" }
 ));
+// --------------------------------------------------------
+titleCase2 = str => str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ');
+console.log(titleCase2("hEllo MY nAME is ... Chicka Chicka SLIM sHaDy"));
+// --------------------------------------------------------
+confirmEnding2 = (str, letter) => str[str.length - 1] === letter;
+console.log(confirmEnding2('Basian', 'n'));
+console.log(confirmEnding2('Basian', 't'));
+// --------------------------------------------------------
+repeatStringNumTimes2 = (str, num) => num > 5 ? str.repeat(num) : null;
+console.log(repeatStringNumTimes2('*', 5));
+console.log(repeatStringNumTimes2('&', 10));
