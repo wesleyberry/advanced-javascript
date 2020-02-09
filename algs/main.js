@@ -194,6 +194,23 @@ let findLongestWordTwo = str => str.split(' ').sort((a, b) => b.length - a.lengt
 // console.log(findLongestWordTwo('The quick brown fox jumped over the red dog'));
 // --------------------------------------------------------
 let truncateStringTwo = (str, num) => str.substring(0, num);
-console.log(truncateStringTwo('Peter Piper picked a pizza', 5));
-console.log(truncateStringTwo('Peter Piper picked a pizza', 3));
-console.log(truncateStringTwo('Peter Piper picked a pizza', 10));
+// console.log(truncateStringTwo('Peter Piper picked a pizza', 5));
+// console.log(truncateStringTwo('Peter Piper picked a pizza', 3));
+// console.log(truncateStringTwo('Peter Piper picked a pizza', 10));
+// --------------------------------------------------------
+let getIndexToInsTwo = (arr, num) => {
+    arr.push(num);
+    return arr.sort((a, b) => a - b);
+}
+// console.log(getIndexToInsTwo([10, 40, 60, 100, 20], 50));
+// --------------------------------------------------------
+let mutation2 = arr => {
+    let wordOne = arr[0].toLowerCase();
+    let wordTwo = arr[1].toLowerCase();
+    for(let letter of wordTwo) {
+        if(wordOne.indexOf(letter) === -1) return false;
+    }
+    return true;
+}
+console.log(mutation2(['hello', 'hELlO']));
+console.log(mutation2(['yelp', 'hELlO']));
