@@ -212,5 +212,7 @@ let mutation2 = arr => {
     }
     return true;
 }
-console.log(mutation2(['hello', 'hELlO']));
-console.log(mutation2(['yelp', 'hELlO']));
+// console.log(mutation2(['hello', 'hELlO']));
+// console.log(mutation2(['yelp', 'hELlO']));
+// --------------------------------------------------------
+const insertWhitespace = s => s.replace(/([a-z])([A-Z])/g, "$1 $2");
