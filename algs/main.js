@@ -230,6 +230,11 @@ const reverseOdd = str => str.split(' ').map(word => word.length % 2 === 0 ? wor
 function combinations(items) {
 	return [...arguments].reduce((acc,v) => v ? acc*v : acc+v, 1)
 }
-console.log(combinations(2, 3));
-console.log(combinations(3, 7, 4));
-console.log(combinations(2, 3, 4, 5));
+// console.log(combinations(2, 3));
+// console.log(combinations(3, 7, 4));
+// console.log(combinations(2, 3, 4, 5));
+// --------------------------------------------------------
+const duplicateCount = text => (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+console.log((duplicateCount('abcde')));
+console.log((duplicateCount('invisibility')));
+console.log((duplicateCount('aabBcde')));
