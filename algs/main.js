@@ -216,3 +216,20 @@ let mutation2 = arr => {
 // console.log(mutation2(['yelp', 'hELlO']));
 // --------------------------------------------------------
 const insertWhitespace = s => s.replace(/([a-z])([A-Z])/g, "$1 $2");
+// console.log(insertWhitespace("SheWalksToTheBeach"));
+// console.log(insertWhitespace("MarvinTalksTooMuch"));
+// console.log(insertWhitespace("TheGreatestUpsetInHistory"));
+// console.log(insertWhitespace('EvenTheBestFallDownSometimes'));
+// console.log(insertWhitespace('TheGreatestUpsetInHistory'));
+// --------------------------------------------------------
+const reverseOdd = str => str.split(' ').map(word => word.length % 2 === 0 ? word : word.split('').reverse().join('')).join(' ');
+// console.log(reverseOdd('Bananas'));
+// console.log(reverseOdd('One two three four'));
+// console.log(reverseOdd('Make sure uoy only esrever sdrow of ddo length'));
+// --------------------------------------------------------
+function combinations(items) {
+	return [...arguments].reduce((acc,v) => v ? acc*v : acc+v, 1)
+}
+console.log(combinations(2, 3));
+console.log(combinations(3, 7, 4));
+console.log(combinations(2, 3, 4, 5));
