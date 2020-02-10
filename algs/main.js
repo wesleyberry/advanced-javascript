@@ -235,6 +235,12 @@ function combinations(items) {
 // console.log(combinations(2, 3, 4, 5));
 // --------------------------------------------------------
 const duplicateCount = text => (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
-console.log((duplicateCount('abcde')));
-console.log((duplicateCount('invisibility')));
-console.log((duplicateCount('aabBcde')));
+// console.log((duplicateCount('abcde')));
+// console.log((duplicateCount('invisibility')));
+// console.log((duplicateCount('aabBcde')));
+// --------------------------------------------------------
+// Recursive sum of all the digits in a number
+const digital_root = n => ((n - 1) % 9 + 1);
+console.log(digital_root(16));
+console.log(digital_root(942));
+console.log(digital_root(132189));
